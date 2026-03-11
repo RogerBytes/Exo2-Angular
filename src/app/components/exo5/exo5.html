@@ -1,0 +1,9 @@
+<h2>Exo 5</h2>
+
+@if (isAdmin) {
+  @for (user of users; track $index) {
+    @if (user.active) {
+      <p>L'utilisateur {{ user.name }} est actif.</p>
+    }
+  }
+}

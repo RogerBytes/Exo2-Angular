@@ -1,0 +1,23 @@
+<h2>Exo 3</h2>
+
+@if (tasks.length > 0) {
+  <p>Le tableau</p>
+  @for (item of tasks; track $index) {
+    <p>{{ item }}</p>
+  }
+} @else {
+  Le tableau est vide <br>
+}
+
+<br>
+
+@if (products.length > 0) {
+  <p>Voici le tableau</p>
+  @for (item of products; track $index) {
+    <br>
+    <p>Nom : {{ item.name }}</p>
+    <p>Prix : {{ item.price }}</p>
+  }
+} @else {
+  Le tableau est vide
+}
